@@ -1,0 +1,25 @@
+body{
+    background-color:#2A2C2F;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lead__title{
+    font-size: 6rem;
+}
+
+.cover__overlay{
+    background-image: url(./images/cover__background.png);
+}
