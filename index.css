@@ -7,6 +7,7 @@ body{
 .page{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -18,8 +19,148 @@ body{
 
 .lead__title{
     font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 5.69;
+    margin-bottom: 32px;
+}
+
+.lead__subtitle{
+    font-size: 1.875rem;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+
+.intro{
+    width: 1017px;
+    height: 516px;
+    margin-bottom: 5.75rem;
+}
+
+.intro__title{
+    font-size: 3.375rem;
+}
+
+.intro__text{
+    width: 45.125rem;
+}
+
+.intro__quote{
+    width: 45.12rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.intro__quote-author{
+    text-align: end;
+    margin: 0;
+}
+
+.intro__paragraph{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.photo_grid{
+    margin: 0;
+    display: grid;
+    width: 1184px;
+    height: 442px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.places{
+    width: 987px;
+    margin-bottom: 92px;
+}
+
+.place{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "title website" 
+    "image paragraph"
+    "image paragraph2"
+    "image paragraph3"
+    "button ."
+    
+    ;
+}
+
+.place__website{
+    grid-area: website;
+}
+
+.website__url-heading{
+    color: #AAA;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.website__artist{
+    color: #FFF;
+    font-size: 18px;
+}
+
+.place__title{
+    grid-area: title;
+}
+
+.place__image{
+    width: 460px;
+    height: 460px;
+    grid-area: image;
+}
+
+.place__paragraph{
+    grid-area: paragraph;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+.place__paragraph2{
+    grid-area: paragraph2;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+.place__paragraph3{
+    grid-area: paragraph3;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+.place__button{
+    grid-area: button;
+    background-color: #0278FE;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    font-family: Inter;
+    
 }
 
 .cover__overlay{
+    width: 1184px;
+    height: 740px;
     background-image: url(./images/cover__background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover__button{
+    width: 158px;
+    height: 22px;
+    background-color: #0278FE;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-family: Inter;
 }
