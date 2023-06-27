@@ -1,10 +1,11 @@
+
 body{
     background-color:#2A2C2F;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: #fff;
 }
 
-.page{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,14 +16,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .lead__title{
-    font-size: 6rem;
+    font-size: 96px;
     font-weight: bold;
-    line-height: 1.5;
-    margin-top: 5.69;
+    margin-top: 91px;
     margin-bottom: 32px;
+    text-align: center;
+    line-height: 100px;
 }
 
 .lead__subtitle{
@@ -31,6 +34,12 @@ body{
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 64px;
+    text-align: center;
+}
+
+.lead__image{
+    width: 984px;
+    height: 615px;
 }
 
 .intro{
@@ -41,6 +50,7 @@ body{
 
 .intro__title{
     font-size: 3.375rem;
+    text-align: center;
 }
 
 .intro__text{
@@ -65,33 +75,35 @@ body{
 }
 
 .photo_grid{
-    margin: 0;
+    margin: 38px 0 auto;
     display: grid;
     width: 1184px;
     height: 442px;
     grid-template-columns: repeat(4,1fr);
 }
 
+.photo_grid__item{
+    width: 284px;
+    height: 213px;
+}
+
 .places{
-    width: 987px;
-    margin-bottom: 92px;
+    width: calc(100% - 296px);
+    margin: 92px auto 0 auto;
 }
 
 .place{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "title website" 
-    "image paragraph"
-    "image paragraph2"
-    "image paragraph3"
-    "button ."
-    
-    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 460px auto;
+    gap: 40px 48px;
+    margin: 92px 0 80px 0;
 }
 
 .place__website{
-    grid-area: website;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    
 }
 
 .website__url-heading{
@@ -106,46 +118,54 @@ body{
 }
 
 .place__title{
-    grid-area: title;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .place__image{
     width: 460px;
     height: 460px;
-    grid-area: image;
+    grid-row: 2;
 }
 
 .place__paragraph{
-    grid-area: paragraph;
     font-size: 18px;
-    line-height: 163%;
+    grid-row: 2/4;
+    grid-column: 2/3;
 }
 
-.place__paragraph2{
-    grid-area: paragraph2;
-    font-size: 18px;
-    line-height: 163%;
+.place__paragraph >P{
+    margin-bottom: 27px;
 }
 
-.place__paragraph3{
-    grid-area: paragraph3;
-    font-size: 18px;
-    line-height: 163%;
-}
-
-.place__button{
-    grid-area: button;
+.section__button{
     background-color: #0278FE;
-    color: white;
-    border: 0;
-    border-radius: 4px;
+    width: 335px;
     font-size: 14px;
+    color: white;
+    padding: 15px 21px;
+    border-radius: 4px;
     text-align: center;
-    font-family: Inter;
-    
+    text-decoration: none;
+    transition: hover-color .5s ease-in-out;
+}
+
+.section__button-cover{
+    width: 158px;
+}
+
+.section__button:hover{
+    background-color: #0063D2;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
 }
 
 .cover__overlay{
+    position: relative;
     width: 1184px;
     height: 740px;
     background-image: url(./images/cover__background.png);
@@ -153,6 +173,27 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: opacidad .5s ease-in-out;
+}
+
+.cover__overlay:hover{
+    opacity: 0.8;
+}
+
+.cover__title{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 76px;
+    margin-bottom: 32px;
+}
+
+.cover__subtitle{
+    width: 280px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 32px;
 }
 
 .cover__button{
@@ -163,4 +204,235 @@ body{
     border-radius: 4px;
     color: white;
     font-family: Inter;
+    margin: 0;
+}
+
+.footer__copyright{
+    text-align: center;
+    margin-top: 92px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1280px) {
+    .lead{
+        width: 90%;
+    }
+    .lead__title{
+        margin-bottom: 99px;
+    }
+    
+    .lead__image{
+        width: 768px;
+        height: 480px;
+    }
+
+    .intro{
+        width: 90%;
+        height: 100%;
+    }
+    
+    .intro__title{
+        text-align: left;
+    }
+
+    .intro__text{
+        width: 90%;
+        margin-bottom: 64px;
+    }
+
+    .intro__quote{
+        width: 100%;
+    }
+    
+    .photo_grid{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 264px);
+        gap: 16px;
+    }
+
+    .photo_grid__item{
+        width: 352px;
+        height: 264px;
+    }
+
+    .places{
+        height: 100%;
+        width: 95%;
+    }
+
+    .place{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .place__image{
+        width: 340px;
+        height: 340px;
+    }
+
+    .place__title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .place__paragraph{
+        font-size: 16px;
+        line-height: 163%;
+    }
+
+    .section__button{
+       width: 315px;
+       height: 22px; 
+    }
+
+    .footer__copyright{
+        margin-top: 88px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    
+    .logo{
+        width: 200px;
+        height: 51.9px;
+        margin-top: 20px;
+        margin-bottom: 50.15px;
+    }
+
+    .lead{
+        width: 100%;
+    }
+
+    .lead__title{
+        margin: 0;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .lead__subtitle{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .lead__image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .intro__title{
+       font-size: 32px;
+       line-height: 35px; 
+    }
+
+    .intro__text{
+        width: 100%;
+    }
+
+    .intro__quote{
+        width: 100%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .intro__quote-author{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .intro__paragraph{
+        font-size: 16px;
+        line-height: 163%;
+        margin-bottom: 0;
+    }
+
+    .photo_grid{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 38px;
+    }
+
+    .photo_grid__item{
+        width: 288px;
+        height: 216px;
+    }
+
+    .places{
+        width: 100%;
+    }
+
+    .place{
+        display: flex;
+        flex-direction: column;
+        margin:0
+    }
+
+    .place__image{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .place__title{
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .website__url-heading{
+        margin: 0;
+    }
+
+    .website__artist{
+        margin: 0;
+        padding-top: 8px;
+    }
+
+    .place__paragraph{
+        font-size: 16px;
+        line-height: 163%;
+    }
+    .place__paragraph-text{
+        margin: 0;
+    }
+
+    .section__button{
+        width: 90%;
+        height: 100%;
+        margin-bottom: 16px;
+    }
+
+    .cover__overlay{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cover__title{
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .cover__subtitle{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .section__button-cover{
+        width: 158px;
+        height: 22px;
+    }
+
+    .footer__copyright{
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
 }
