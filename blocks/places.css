@@ -93,7 +93,7 @@
     .place {
         grid-template-rows: auto 460px auto;
         grid-template-columns: 1fr 1fr;
-        gap:48px
+        gap:48px;
     }
 
     .place__title{
