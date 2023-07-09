@@ -1,0 +1,75 @@
+@import url(../blocks/button.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/intro.css);
+@import url(../blocks/photo-grid.css);
+@import url(../blocks/places.css);
+@import url(../blocks/cover.css);
+
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../vendor/fonts/Inter-Regular.woff2) format("woff2"),
+      url(../vendor/fonts/Inter-Regular.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../vendor/fonts/Inter-Black.woff2) format("woff2"),
+      url(../vendor/fonts/Inter-Black.woff) format("woff");
+  }
+
+body{
+    background-color:#2A2C2F;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.logo{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 270px;
+    height: 70px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    padding: 64px 0 24px 0;
+}
+
+.footer__copyright{
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+
+
+@media screen and (min-width:768px){
+    
+    .logo{
+        margin-bottom: 90px;
+    }
+    
+    .footer{
+        padding: 88px 0 24px 0;
+    }
+}
+
+@media screen and (min-width: 1280) {
+
+    .footer{
+        padding: 92px 0 24px 0;
+    }
+    
+}

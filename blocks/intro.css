@@ -1,0 +1,69 @@
+
+.intro{
+    width: calc(100% - 16px*2);
+    margin: 44px 0 auto;
+
+}
+
+.intro__title{
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.intro__quote{
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.intro__quote-author{
+    text-align: end;
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.intro__paragraph{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .intro{
+        margin-top: 55px;
+    }
+    
+    .intro__title{
+        font-size: 54px;
+        margin: 0;
+    }
+
+    .intro__paragraph{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .intro{
+        width: calc(100% - 148px*2);
+        margin-top: 92px;
+		padding: 0 148px;
+    }
+
+    .intro__quote{
+        width: 720px;
+        font-size: 24px;
+        line-height: 1.4;
+        margin: 40px 0 0 ;
+    }
+    
+    .intro__paragraph{
+        width: 720px;
+        margin-top: 32px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,35 @@
+.button{
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+    font-size: 14px;
+    width: calc(100% - 16px*2);
+    background-color: #0278FE;
+    padding: 15px 20px;
+    border-radius: 4px;
+    transition: background-color .5s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #0063D2;
+}
+
+.button_places{
+    margin-top: 20px;
+    width: auto;
+}
+
+.button_cover{
+    width: 198px;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .button{
+        width: 355px;
+        font-size: 18px;
+        line-height: 1;
+    }
+}

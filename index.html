@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./vendor/normalize.css"
+    <link rel="stylesheet" href="pages/index.css">
     <title>Practicum Art Gallery</title>
 </head>
 <body>
-  <main class="content">
+    <div class="page">
         <img class="logo" src="./images/__logo.svg" alt="Logo galeria Practicum">
     
         <section class="lead">
-            <h1 class="lead__title">De patria a patria</h1>
-            <h2 class="lead__subtitle">Un viaje épico de Kentucky a Burundi pasando Gales y Ucrania</h2>
+                <h1 class="lead__title">De patria a patria</h1>
+                <h2 class="lead__subtitle">Un viaje épico de Kentucky a Burundi pasando Gales y Ucrania</h2>
+            
         <img class="lead__image" src="./images/__image.jpg" alt="Imagen del viaje de Kentucky">
         </section>
 
@@ -50,7 +52,7 @@
             <p class="place__paragraph-text">La ciudad en sí es una mezcla de arquitectura prerrevolucionaria, de posguerra y soviética, toda ella salpicada de balcones modificados. Si te encuentras en la orilla derecha del Dniéper, el paisaje es difícil de atravesar para las personas en bicicleta y las que llevan tacones. Sin embargo, la orilla izquierda es considerada mucho menos interesante y prestigiosa, incluso por la gente que vive en las afueras de la derecha.</p>
             </div>
             
-            <a class="section__button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
+            <a class="button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
         </div>
         <div class="place">
            <h2 class="place__title">Criccieth, Gales</h2>
@@ -65,7 +67,7 @@
                 <p class="place__paragraph-text">A poca distancia del castillo, se puede disfrutar del mejor helado del mundo en Cadwalader's, cuyo ingrediente secreto se rumorea que son las algas de la zona. Otro reclamo a la fama es el hecho de que Criccieth ganó el premio *Wales in Bloom* durante cinco años consecutivos por sus espectaculares exhibiciones florales alrededor de la ciudad. También fue el hogar de David Lloyd George, el único galés que ocupó el cargo de Primer Ministro del Reino Unido.</p>
             </div>
            
-        <a class="section__button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
+        <a class="button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
         </div>
         <div class="place">
             <h2 class="place__title">Berea, Estados Unidos</h2>
@@ -79,7 +81,7 @@
                 <p class="place__paragraph-text">Sin embargo, es probablemente más conocido por la universidad local Berea College se fundó en 1855 y fue la primera universidad del sur de EE.UU. en estar integrada racialmente, así como la primera en ser coeducativa. De manera singular, no cobra matrícula: todos los estudiantes reciben una beca de matrícula completa.</p>
             </div>
             
-        <a class="section__button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>  
+        <a class="button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>  
         </div>
         <div class="place">
             <h2 class="place__title">Muramvya, Burundi</h2>
@@ -94,7 +96,7 @@
                 <p class="place__paragraph-text">El Parque Nacional de Kibira, una de las mayores reservas de fauna silvestre para simios, se extiende por cuatro provincias, incluida Muramvya. Este Parque Nacional se encuentra en el vértice de las hermosas montañas de la divisoria Congo-Nilo, que oscilan entre los 1.550 y los 2.660 metros de altitud. Está lleno de hermosa vegetación, y es una fuente para los diversos ríos y arroyos que proporcionan agua en todo el país</p>
             </div>
             
-        <a class="section__button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
+        <a class="button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
         </div>
         <div class="place">
            <h2 class="place__title">Guayaquil, Ecuador</h2>
@@ -108,27 +110,27 @@
             <p class="place__paragraph-text"> La prueba más fehaciente es su renovado Malecón 2000 con su colección de restaurantes, así como de espacios recreativos y culturales a largo de la Avenida Malecón que corre paralela al río Guayas.</p>
            </div>
            
-        <a class="section__button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
+        <a class="button" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">Compra esta obra de arte como NFT</a>
         </div>
     </section>
 
     <section class="cover">
-        <div class="cover__overlay">
+        <div class="cover__content">
                 <h2 class="cover__title">Visítanos</h2>
                 <h3 class="cover__subtitle">Todo el año
                 Galería de Arte de Practicum
                 404, Avenida Tim Berners-Lee.</h3>
-            <a href="#" class="section__button section__button-cover">Comprar entradas</a>
-            
+            <a href="#" class="button button_cover">Comprar entradas</a>
+            <div class="cover__overlay"></div>
         </div>
     </section>
     
     
 
     <footer class="footer">
-        <p class="footer__copyright">© 2021. David Jara</p>
+        <p class="footer__copyright">© 2023. David Jara</p>
     </footer>
 
-</main>
+    </div>
 </body>
 </html>
